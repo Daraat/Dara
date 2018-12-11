@@ -4,7 +4,7 @@
 <style>
     
     html {
- scroll-behavior: auto;
+ scroll-behavior: smooth;
 }
 .container
 {
@@ -51,35 +51,31 @@
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8d/The_Creation_Michelangelo_Italy_Vatican_-_Creative_Commons_by_gnuckx_%283492637506%29.jpg');
   width: 100%;
   height: 100%;
-  filter: blur(4px);
+  filter: blur(3.5px);
  background-size: 100% 1000px;
 }
     .content {
-  position: fixed;
+  position: relative;
   left: 0;
   right: 0;
   z-index: 9999;
   margin-left: 20px;
   margin-right: 20px;
 }
-    section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-    #section1 {
-  height: auto;
-  ;
+#section1 {
+  
+  height: 900px  ;
+  
 }
 
 #section2 {
-  height:500px;
- background-color:white;
+  height: 600px;
+ 
 }
-    
+
     .tab {
         margin-bottom: 20em;
-margin-left: 10em;
+        margin-left: 300px;
 }
     
     </style>
@@ -100,17 +96,18 @@ margin-left: 10em;
 <body >
    <div class="background-image"></div>
     <div class="content">
-    <center><div class="w3-container w3-center w3-animate-opacity" id="section1"><h2><img STYLE="position:relative;  WIDTH:pixels; HEIGHT:300px" SRC="https://upload.wikimedia.org/wikipedia/commons/5/5c/Leonardo_da_Vinci%2C_Salvator_Mundi%2C_c.1500%2C_oil_on_walnut%2C_45.4_%C3%97_65.6_cm.jpg" style="max-width:100%;height:auto;"> </h2></div>
+    <center><div class="main; w3-container w3-center w3-animate-opacity, smoothScroll" id="section1"  ><h2><img STYLE="position:relative;  WIDTH:pixels; HEIGHT:300px" SRC="https://upload.wikimedia.org/wikipedia/commons/5/5c/Leonardo_da_Vinci%2C_Salvator_Mundi%2C_c.1500%2C_oil_on_walnut%2C_45.4_%C3%97_65.6_cm.jpg" style="max-width:100%;height:auto;"> </h2>
     <p Style="font-family: serif" style="font-size:10vw" style= "position: relative"><font size="7"> Dara A.Tafreshi</font></p>
 <p  Style="font-family: serif" style="font-size:10vw"><font size="3"> Computer Science B.S Student UC Santa Cruz, CA</font></p>
-    <div class="w3-container w3-center w3-animate-top" id="section1"><p Style="font-family: serif" style="font-size:5vw" align="center"  ><font size = "4">My name is Dara and currently I'm a student at University California Santa Cruz, studying Computer Science. I'm looking for Internships regarding my major. for furthur information please contact my LinkedIn account.</font></p></div> 
-        <p> <a href="https://twitter.com/daratafreshi" class="fa fa-twitter"></a> <a href="https://www.linkedin.com/in/dara-abedini-tafreshi-6797b5a6" class="fa fa-linkedin"></a>       <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a></p>
- <pre class="tab"></pre>
-    </center>
+    <div class="w3-container w3-center w3-animate-top ; "><p Style="font-family: serif" style="font-size:5vw" align="center"  ><font size = "4">My name is Dara and currently I'm a student at University California Santa Cruz, studying Computer Science. I'm looking for Internships regarding my major. for furthur information please contact my LinkedIn account.</font></p></div> 
+        <p> <a href="https://twitter.com/daratafreshi" class="fa fa-twitter"></a> <a href="https://www.linkedin.com/in/dara-abedini-tafreshi-6797b5a6" class="fa fa-linkedin"></a> 
+        <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a> </p>
         
+ </div>
+    </center>
  
       <center>  
-       <div  class="tab" id="section2"> <h1 Style="font-family: serif" style="font-size:5vw" align="left" STYLE="position: absolute; top: auto; left: auto"  ><font size ="5" ><b>Course Work:</b></font>   </h1>  
+       <div  class=" main;  tab ; w3-container w3-center w3-animate-bottom ; smoothScroll" id="section2"><h1 Style="font-family: serif" style="font-size:5vw" align="left" STYLE="position: absolute; top: auto; left: auto" class="smoothScroll" ><font size ="5" ><b>Course Work:</b></font>   </h1>  
         
 <ul Style="font-family: serif" style="font-size:5vw" align="left" STYLE="position: absolute; top: auto; left: auto"  ><font size ="3.5" >
   <li>Advance Programming in C++</li>
@@ -118,11 +115,12 @@ margin-left: 10em;
     <li>Introduction to LINUX/UNIX</li>
     <li>Advance Programming JAVA</li>
     <li>Assembely Language X86</li>
-    <li></li>
+   
     
-    
+   
     </font>
 </ul>
+           
     </div>
     
     
