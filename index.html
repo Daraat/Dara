@@ -1,135 +1,152 @@
-<!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN”
-“http://www.w3.org/TR/html4/strict.dtd">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">   
- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-
-
-
+<!DOCTYPE html>
 <html>
     
-<style>
+    <style>
      html {
+  scroll-behavior: smooth;
+}   
+          
         
- scroll-behavior: smooth;
+    body{
+  margin: 0;
+  padding: 0;
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
 }
+.box{
+  height:900px;
+  width: 900px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+    margin-bottom: 5%;
+  color: black;
+  font-family: 'courier';
+    border-radius: 12px;
+}
+.box-img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
     
-.button {
-  background-color: darkgreen;
-  
+}
+.box h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h5{
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 100;
    
-    height: 40px;
-    width: auto;
+}
+.box p{
+  text-align: justify;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a{
   color: white;
-  padding: 4px 8px;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+  color: #b9b9b9;
+}
+.button {
+    width:200px; 
+  background-color: #b9b9b9;
+  border: none;
+  color: white;
+  padding: 12px 28px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size:26px;
- 
-    
+  font-size: 18px;
+      font-weight: 100;
+position: absolute
+  margin:0 auto;
   cursor: pointer;
+    border-radius: 12px;
 }    
-    .button:hover{
-        opacity: 0.7;
-    }    
-    
-.fa {
- 
-    height: 40px;
-  padding: auto;
-  font-size: 40px;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
-  margin: 0px 2px;
-    
+    .button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+        .wrapper {
+    text-align: center;
+}
+        
+        
+        
+        #section1 {
+  height: 1000px;
   
 }
 
-.fa:hover {
-    opacity: 0.7;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
+#section2 {
+  height: 600px;
+  
 }
 
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}    
 
+   </style>
+    
+    
+    
+  <head>
+    <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Dara A.Tafreshi</title>
+  </head>
+  <body>
+<div class="box">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="" class="box-img">
+  <h1 style="font-family:courier;"> Dara A.Tafreshi</h1>
+<h5 style="font-family:courier;">
+Computer Science B.S</h5>
+    <h5 style="font-family:courier;"><font  size= "2">UC Santa Cruz, CA</font> </h5>
+<p style="font-family:courier;"><font size= "5">My name is Dara and currently I'm a student at University California Santa Cruz, studying Computer Science. I'm looking for Internships regarding my major. for furthur information please contact my LinkedIn account. </font> </p>
+<ul>
+    
+    
+ <div class="wrapper">   
+<li><a href="https://www.linkedin.com/in/dara-abedini-tafreshi-6797b5a6"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+<li><a href="https://twitter.com/daratafreshi"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+    </div>
+    
 
-
-
-    
-    section1{
-         position: absolute;
-        top: 100px;
-        left: 160px;
-        height: 100px;
-    }
-    #section2 {
-        position: absolute;
-        height: 1000px;
-        top: 1000px;
-    width: 600px;
- 	margin: auto auto;
-        text-decoration: none;
-    
-}
+</ul>
+   <div class="w3-container w3-center w3-animate-top" id="section1"> 
+     <a class="button" href="#section2" >Course Work</a>
+    </div>
     
     
-    aside{
-        position: absolute;
-        top: 200px;
-        margin-right: 200px;
-        left: 600px;
-        height: 50px;
-        
-    }
+    <div  id="section2">
+  <h2 style="font-family:courier;" >Related Course Work:</h2>
+       <ul Style="font-family:courier"  align="center" STYLE="position: absolute; "  ><font size ="3.5" >
+  <li>Advance Programming in C++ /</li>
+  <li>Abstract Data Structures /</li>
+    <li>Introduction to LINUX/UNIX /</li>
+    <li>Advance Programming JAVA /</li>
+    <li>Assembely Language X86 /</li>
     
-    img {
-  border-radius: 50%;
-}
-    ul {
-  list-style-type: none;
-}
-    
-    </style>
-    
-    
-    
-<head>
-<title>Dara A.Tafreshi</title>
-</head>
-<body>
-<div class="w3-container w3-center w3-animate-top">
-    <section1>
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" > 
-    <center><p Style="font-family: serif" style="font-size:10vw" style= "position: relative"><font size="7"> Dara A.Tafreshi</font></p><p1 Style="font-family: serif" size="15" >Computer Science B.S  </p1><p Style="font-family: serif" size="10" >UC Santa Cruz, CA</p></center></section1></div>
-    
-    
-    <aside> <div class="w3-container w3-center w3-animate-left"  ;  ><p Style="font-family: serif" style="font-size:5vw" style= align-content: center;  ><font size = "5">My name is Dara and currently I'm a student at University California Santa Cruz, studying Computer Science. I'm looking for Internships regarding my major. for furthur information please contact my LinkedIn account.</font></p>  
-      
- </div>
-<div STYLE="position:relative; top: auto; left: auto" align="center" >     
- <a href="https://twitter.com/daratafreshi" class="fa fa-twitter"></a>
-<a href="https://www.linkedin.com/in/dara-abedini-tafreshi-6797b5a6" class="fa fa-linkedin"></a>
-<a href="#section2" class="button"> <font Style="font-family: serif" size="3">Course Work</font></a>  </div>         
-        
-      </aside>
-
-   <div  class=" main;  tab ; " id="section2"><h1 Style="font-family: serif" style="font-size:5vw" align="center" STYLE="position: absolute; top: auto; left: auto" class="smoothScroll" ><font size ="5" ><b>Course Work:</b></font>   </h1>  
-        
-<ul Style="font-family: serif" style="font-size:5vw" align="left" STYLE="position: absolute; "  ><font size ="3.5" >
-  <li>Advance Programming in C++</li>
-  <li>Abstract Data Structures </li>
-    <li>Introduction to LINUX/UNIX</li>
-    <li>Advance Programming JAVA</li>
-    <li>Assembely Language X86</li>
+           
+    <a></a>       
    
     
     
@@ -137,17 +154,9 @@
    
     </font>
 </ul>
-           
-    </div>
-    
-    
-    
-   
-
- 
-      
-
-    
-    
+  
+</div>
+</div>
 </body>
 </html>
+
